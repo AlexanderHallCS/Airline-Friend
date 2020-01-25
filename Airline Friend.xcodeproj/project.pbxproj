@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A55F23DCBA3D0078001B /* AppDelegate.swift */; };
+		1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56123DCBA3D0078001B /* SceneDelegate.swift */; };
+		1141A56423DCBA3D0078001B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56323DCBA3D0078001B /* ViewController.swift */; };
+		1141A56723DCBA3D0078001B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56523DCBA3D0078001B /* Main.storyboard */; };
+		1141A56A23DCBA3D0078001B /* Airline_Friend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */; };
+		1141A56C23DCBA400078001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56B23DCBA400078001B /* Assets.xcassets */; };
+		1141A56F23DCBA400078001B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56D23DCBA400078001B /* LaunchScreen.storyboard */; };
+		1141A57A23DCBA400078001B /* Airline_FriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A57923DCBA400078001B /* Airline_FriendTests.swift */; };
+		1141A58523DCBA400078001B /* Airline_FriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A58423DCBA400078001B /* Airline_FriendUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1141A57623DCBA400078001B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1141A55423DCBA3D0078001B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1141A55B23DCBA3D0078001B;
+			remoteInfo = "Airline Friend";
+		};
+		1141A58123DCBA400078001B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1141A55423DCBA3D0078001B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1141A55B23DCBA3D0078001B;
+			remoteInfo = "Airline Friend";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1141A55C23DCBA3D0078001B /* Airline Friend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airline Friend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141A55F23DCBA3D0078001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1141A56123DCBA3D0078001B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1141A56323DCBA3D0078001B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1141A56623DCBA3D0078001B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1141A56923DCBA3D0078001B /* Airline_Friend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Airline_Friend.xcdatamodel; sourceTree = "<group>"; };
+		1141A56B23DCBA400078001B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1141A56E23DCBA400078001B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1141A57023DCBA400078001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1141A57523DCBA400078001B /* Airline FriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airline FriendTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141A57923DCBA400078001B /* Airline_FriendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline_FriendTests.swift; sourceTree = "<group>"; };
+		1141A57B23DCBA400078001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1141A58023DCBA400078001B /* Airline FriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airline FriendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141A58423DCBA400078001B /* Airline_FriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline_FriendUITests.swift; sourceTree = "<group>"; };
+		1141A58623DCBA400078001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1141A55923DCBA3D0078001B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57223DCBA400078001B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57D23DCBA400078001B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1141A55323DCBA3D0078001B = {
+			isa = PBXGroup;
+			children = (
+				1141A55E23DCBA3D0078001B /* Airline Friend */,
+				1141A57823DCBA400078001B /* Airline FriendTests */,
+				1141A58323DCBA400078001B /* Airline FriendUITests */,
+				1141A55D23DCBA3D0078001B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1141A55D23DCBA3D0078001B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1141A55C23DCBA3D0078001B /* Airline Friend.app */,
+				1141A57523DCBA400078001B /* Airline FriendTests.xctest */,
+				1141A58023DCBA400078001B /* Airline FriendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1141A55E23DCBA3D0078001B /* Airline Friend */ = {
+			isa = PBXGroup;
+			children = (
+				1141A55F23DCBA3D0078001B /* AppDelegate.swift */,
+				1141A56123DCBA3D0078001B /* SceneDelegate.swift */,
+				1141A56323DCBA3D0078001B /* ViewController.swift */,
+				1141A56523DCBA3D0078001B /* Main.storyboard */,
+				1141A56B23DCBA400078001B /* Assets.xcassets */,
+				1141A56D23DCBA400078001B /* LaunchScreen.storyboard */,
+				1141A57023DCBA400078001B /* Info.plist */,
+				1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */,
+			);
+			path = "Airline Friend";
+			sourceTree = "<group>";
+		};
+		1141A57823DCBA400078001B /* Airline FriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				1141A57923DCBA400078001B /* Airline_FriendTests.swift */,
+				1141A57B23DCBA400078001B /* Info.plist */,
+			);
+			path = "Airline FriendTests";
+			sourceTree = "<group>";
+		};
+		1141A58323DCBA400078001B /* Airline FriendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1141A58423DCBA400078001B /* Airline_FriendUITests.swift */,
+				1141A58623DCBA400078001B /* Info.plist */,
+			);
+			path = "Airline FriendUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1141A55B23DCBA3D0078001B /* Airline Friend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1141A58923DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline Friend" */;
+			buildPhases = (
+				1141A55823DCBA3D0078001B /* Sources */,
+				1141A55923DCBA3D0078001B /* Frameworks */,
+				1141A55A23DCBA3D0078001B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airline Friend";
+			productName = "Airline Friend";
+			productReference = 1141A55C23DCBA3D0078001B /* Airline Friend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1141A57423DCBA400078001B /* Airline FriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1141A58C23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendTests" */;
+			buildPhases = (
+				1141A57123DCBA400078001B /* Sources */,
+				1141A57223DCBA400078001B /* Frameworks */,
+				1141A57323DCBA400078001B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1141A57723DCBA400078001B /* PBXTargetDependency */,
+			);
+			name = "Airline FriendTests";
+			productName = "Airline FriendTests";
+			productReference = 1141A57523DCBA400078001B /* Airline FriendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1141A57F23DCBA400078001B /* Airline FriendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1141A58F23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendUITests" */;
+			buildPhases = (
+				1141A57C23DCBA400078001B /* Sources */,
+				1141A57D23DCBA400078001B /* Frameworks */,
+				1141A57E23DCBA400078001B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1141A58223DCBA400078001B /* PBXTargetDependency */,
+			);
+			name = "Airline FriendUITests";
+			productName = "Airline FriendUITests";
+			productReference = 1141A58023DCBA400078001B /* Airline FriendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1141A55423DCBA3D0078001B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hall Inc.";
+				TargetAttributes = {
+					1141A55B23DCBA3D0078001B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					1141A57423DCBA400078001B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 1141A55B23DCBA3D0078001B;
+					};
+					1141A57F23DCBA400078001B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 1141A55B23DCBA3D0078001B;
+					};
+				};
+			};
+			buildConfigurationList = 1141A55723DCBA3D0078001B /* Build configuration list for PBXProject "Airline Friend" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1141A55323DCBA3D0078001B;
+			productRefGroup = 1141A55D23DCBA3D0078001B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1141A55B23DCBA3D0078001B /* Airline Friend */,
+				1141A57423DCBA400078001B /* Airline FriendTests */,
+				1141A57F23DCBA400078001B /* Airline FriendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1141A55A23DCBA3D0078001B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141A56F23DCBA400078001B /* LaunchScreen.storyboard in Resources */,
+				1141A56C23DCBA400078001B /* Assets.xcassets in Resources */,
+				1141A56723DCBA3D0078001B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57323DCBA400078001B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57E23DCBA400078001B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1141A55823DCBA3D0078001B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141A56423DCBA3D0078001B /* ViewController.swift in Sources */,
+				1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */,
+				1141A56A23DCBA3D0078001B /* Airline_Friend.xcdatamodeld in Sources */,
+				1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57123DCBA400078001B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141A57A23DCBA400078001B /* Airline_FriendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1141A57C23DCBA400078001B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141A58523DCBA400078001B /* Airline_FriendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1141A57723DCBA400078001B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1141A55B23DCBA3D0078001B /* Airline Friend */;
+			targetProxy = 1141A57623DCBA400078001B /* PBXContainerItemProxy */;
+		};
+		1141A58223DCBA400078001B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1141A55B23DCBA3D0078001B /* Airline Friend */;
+			targetProxy = 1141A58123DCBA400078001B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1141A56523DCBA3D0078001B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1141A56623DCBA3D0078001B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1141A56D23DCBA400078001B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1141A56E23DCBA400078001B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1141A58723DCBA400078001B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1141A58823DCBA400078001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1141A58A23DCBA400078001B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline Friend/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-Friend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1141A58B23DCBA400078001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline Friend/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-Friend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1141A58D23DCBA400078001B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline FriendTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-FriendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airline Friend.app/Airline Friend";
+			};
+			name = Debug;
+		};
+		1141A58E23DCBA400078001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline FriendTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-FriendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airline Friend.app/Airline Friend";
+			};
+			name = Release;
+		};
+		1141A59023DCBA400078001B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline FriendUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-FriendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Airline Friend";
+			};
+			name = Debug;
+		};
+		1141A59123DCBA400078001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFCM63NH3Y;
+				INFOPLIST_FILE = "Airline FriendUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noivernalchemist.Airline-FriendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Airline Friend";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1141A55723DCBA3D0078001B /* Build configuration list for PBXProject "Airline Friend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141A58723DCBA400078001B /* Debug */,
+				1141A58823DCBA400078001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1141A58923DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline Friend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141A58A23DCBA400078001B /* Debug */,
+				1141A58B23DCBA400078001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1141A58C23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141A58D23DCBA400078001B /* Debug */,
+				1141A58E23DCBA400078001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1141A58F23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141A59023DCBA400078001B /* Debug */,
+				1141A59123DCBA400078001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1141A56923DCBA3D0078001B /* Airline_Friend.xcdatamodel */,
+			);
+			currentVersion = 1141A56923DCBA3D0078001B /* Airline_Friend.xcdatamodel */;
+			path = Airline_Friend.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1141A55423DCBA3D0078001B /* Project object */;
+}
