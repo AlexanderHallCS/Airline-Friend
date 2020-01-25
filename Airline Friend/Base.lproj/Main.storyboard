@@ -1,24 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Airline Friend Homescreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AirlineFriendHomescreen" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-Fl-XJf">
+                                <rect key="frame" x="39.666666666666657" y="134" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Airline Buddy">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearplane" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-VK-zh6">
+                                <rect key="frame" x="87" y="208" width="240" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-qL-k60">
+                                <rect key="frame" x="122.66666666666669" y="534" width="169" height="108"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26273169645763544" green="0.8145722878656293" blue="0.891568145306599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aJ8-VK-zh6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="8Gl-D9-Nq7"/>
+                            <constraint firstItem="aJ8-VK-zh6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Dgp-P5-feE"/>
+                            <constraint firstItem="aJ8-VK-zh6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LWi-7g-pyn"/>
+                            <constraint firstItem="lXt-Fl-XJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="MM5-EQ-9xc"/>
+                            <constraint firstItem="aJ8-VK-zh6" firstAttribute="top" secondItem="lXt-Fl-XJf" secondAttribute="bottom" constant="74" id="PGS-Qf-wvW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2iC-qL-k60" secondAttribute="bottom" constant="94" id="QNg-ti-i6X"/>
+                            <constraint firstItem="2iC-qL-k60" firstAttribute="top" secondItem="aJ8-VK-zh6" secondAttribute="bottom" constant="6" id="W7V-1m-T1a"/>
+                            <constraint firstItem="lXt-Fl-XJf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aDz-kr-MdX"/>
+                            <constraint firstItem="2iC-qL-k60" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fa4-uE-McE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PNO-ca-5Q6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="115.7608695652174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clearplane" width="980" height="942"/>
+    </resources>
 </document>

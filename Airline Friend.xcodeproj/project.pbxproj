@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A55F23DCBA3D0078001B /* AppDelegate.swift */; };
 		1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56123DCBA3D0078001B /* SceneDelegate.swift */; };
-		1141A56423DCBA3D0078001B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56323DCBA3D0078001B /* ViewController.swift */; };
+		1141A56423DCBA3D0078001B /* AirlineFriendHomescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56323DCBA3D0078001B /* AirlineFriendHomescreen.swift */; };
 		1141A56723DCBA3D0078001B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56523DCBA3D0078001B /* Main.storyboard */; };
 		1141A56A23DCBA3D0078001B /* Airline_Friend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */; };
 		1141A56C23DCBA400078001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56B23DCBA400078001B /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		1141A55C23DCBA3D0078001B /* Airline Friend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airline Friend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141A55F23DCBA3D0078001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1141A56123DCBA3D0078001B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1141A56323DCBA3D0078001B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1141A56323DCBA3D0078001B /* AirlineFriendHomescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineFriendHomescreen.swift; sourceTree = "<group>"; };
 		1141A56623DCBA3D0078001B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1141A56923DCBA3D0078001B /* Airline_Friend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Airline_Friend.xcdatamodel; sourceTree = "<group>"; };
 		1141A56B23DCBA400078001B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,12 +101,10 @@
 		1141A55E23DCBA3D0078001B /* Airline Friend */ = {
 			isa = PBXGroup;
 			children = (
-				1141A55F23DCBA3D0078001B /* AppDelegate.swift */,
-				1141A56123DCBA3D0078001B /* SceneDelegate.swift */,
-				1141A56323DCBA3D0078001B /* ViewController.swift */,
+				1141A59423DCBEC20078001B /* Supporting Files */,
+				1141A56323DCBA3D0078001B /* AirlineFriendHomescreen.swift */,
 				1141A56523DCBA3D0078001B /* Main.storyboard */,
 				1141A56B23DCBA400078001B /* Assets.xcassets */,
-				1141A56D23DCBA400078001B /* LaunchScreen.storyboard */,
 				1141A57023DCBA400078001B /* Info.plist */,
 				1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */,
 			);
@@ -129,6 +127,16 @@
 				1141A58623DCBA400078001B /* Info.plist */,
 			);
 			path = "Airline FriendUITests";
+			sourceTree = "<group>";
+		};
+		1141A59423DCBEC20078001B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1141A55F23DCBA3D0078001B /* AppDelegate.swift */,
+				1141A56123DCBA3D0078001B /* SceneDelegate.swift */,
+				1141A56D23DCBA400078001B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1141A56423DCBA3D0078001B /* ViewController.swift in Sources */,
+				1141A56423DCBA3D0078001B /* AirlineFriendHomescreen.swift in Sources */,
 				1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */,
 				1141A56A23DCBA3D0078001B /* Airline_Friend.xcdatamodeld in Sources */,
 				1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */,
@@ -441,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFCM63NH3Y;
 				INFOPLIST_FILE = "Airline Friend/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFCM63NH3Y;
 				INFOPLIST_FILE = "Airline Friend/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
