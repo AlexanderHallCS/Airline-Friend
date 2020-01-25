@@ -16,9 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-Fl-XJf">
-                                <rect key="frame" x="39.666666666666657" y="178" width="335" height="0.0"/>
+                                <rect key="frame" x="42.666666666666657" y="178" width="329" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="Airline Buddy">
+                                <state key="normal" title="Airline Friend">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="115.7608695652174"/>
         </scene>
-        <!--Branch Navigator Controller-->
+        <!--Branch ControllerVC-->
         <scene sceneID="fvj-aE-7gY">
             <objects>
-                <viewController id="wcC-gD-f22" customClass="BranchNavigatorController" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wcC-gD-f22" customClass="BranchControllerVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie6-yG-DVE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bgd-Vt-UXC" kind="show" id="du5-vm-op0"/>
+                                    <segue destination="vSN-r7-8yz" kind="presentation" modalTransitionStyle="crossDissolve" id="goD-Lj-Uos"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-UX-JnQ">
@@ -139,13 +139,149 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-6v-KLP">
-                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-qm-3wD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="930"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="935"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJZ-II-Tzb">
-                                                <rect key="frame" x="186" y="268" width="42" height="21"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skyimage" translatesAutoresizingMaskIntoConstraints="NO" id="O77-mQ-WGd">
+                                                <rect key="frame" x="-113" y="-3" width="640" height="941"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJZ-II-Tzb">
+                                                <rect key="frame" x="38.333333333333343" y="49" width="337.66666666666663" height="33.333333333333343"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Steps to Have an Easy Time">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="30" name=".SFNSDisplay-Bold"/>
+                                                            <font key="NSOriginalFont" size="30" name=".SFNSDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K29-m1-6Vj">
+                                                <rect key="frame" x="122" y="90.333333333333343" width="170" height="33.333333333333343"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="at the Airport!">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="30" name=".SFNSDisplay-Bold"/>
+                                                            <font key="NSOriginalFont" size="30" name=".SFNSDisplay-Bold"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Make sure your bags aren't too heavy and/or have banned items. Most airlines charge extra for bags over 50 lbs." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4S-ek-CJk">
+                                                <rect key="frame" x="31" y="186" width="332" height="79"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- Common Banned Items Include: Liquids more than 3.4 oz, gasses, matches, and lithium batteries." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAn-oe-ipv">
+                                                <rect key="frame" x="31" y="273" width="353" height="71"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXv-kt-UNo">
+                                                <rect key="frame" x="31" y="352" width="322" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">2. Use luggage labels! These will ensure that your bags don't get lost if they end up in the wrong place. Have your name, contact info., and flight details written on them.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBm-rk-sN7">
+                                                <rect key="frame" x="31" y="157" width="226" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Before Arriving to the Airport:">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-QX-feW">
+                                                <rect key="frame" x="31" y="470" width="152" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Once at the Airport:">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MP-cN-N6R">
+                                                <rect key="frame" x="31" y="763" width="145" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Once on the Plane:">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Check your bags in at the front desk and check your flight time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-h8-Eqf">
+                                                <rect key="frame" x="31" y="499" width="368" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Get checked in through security(make sure you have no drinks!)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-7P-qQX">
+                                                <rect key="frame" x="31" y="562" width="322" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Head to the right terminal. Check your flight details for this." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KD-kZ-wpr">
+                                                <rect key="frame" x="31" y="628" width="345" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Wait for your flight. Make sure to listen to any important flight updates/changes. Check the flight tracker often." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUK-ZP-15E">
+                                                <rect key="frame" x="31" y="679" width="322" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Put large luggage items in the overhead compartments." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5j-Dm-ljf">
+                                                <rect key="frame" x="31" y="792" width="285" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Listen to some of the tunes in this app if you are afraid of flying." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1R-Bb-K6B">
+                                                <rect key="frame" x="31" y="844" width="285" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Sit back and relax!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek8-oh-ZTg">
+                                                <rect key="frame" x="31" y="906" width="160" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -154,12 +290,20 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="930" id="ogn-FO-0r9"/>
+                                            <constraint firstItem="O77-mQ-WGd" firstAttribute="height" secondItem="8hx-qm-3wD" secondAttribute="height" multiplier="1.00645" id="1ch-Ge-K6h"/>
+                                            <constraint firstItem="K29-m1-6Vj" firstAttribute="centerX" secondItem="zJZ-II-Tzb" secondAttribute="centerX" id="Ady-6c-ldO"/>
+                                            <constraint firstItem="zJZ-II-Tzb" firstAttribute="centerX" secondItem="8hx-qm-3wD" secondAttribute="centerX" id="BAS-zb-G0d"/>
+                                            <constraint firstItem="O77-mQ-WGd" firstAttribute="top" secondItem="8hx-qm-3wD" secondAttribute="top" constant="-3" id="OwW-Di-4xO"/>
+                                            <constraint firstItem="zJZ-II-Tzb" firstAttribute="top" secondItem="8hx-qm-3wD" secondAttribute="top" constant="49" id="eSs-YR-Oep"/>
+                                            <constraint firstItem="K29-m1-6Vj" firstAttribute="top" secondItem="zJZ-II-Tzb" secondAttribute="bottom" constant="8" id="egd-Md-5KT"/>
+                                            <constraint firstItem="O77-mQ-WGd" firstAttribute="leading" secondItem="VBm-rk-sN7" secondAttribute="trailing" constant="-370" id="m40-d5-0LC"/>
+                                            <constraint firstItem="VBm-rk-sN7" firstAttribute="top" secondItem="K29-m1-6Vj" secondAttribute="bottom" constant="33.333333333333314" id="nbp-4y-ALH"/>
+                                            <constraint firstAttribute="height" constant="935" id="ogn-FO-0r9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="8hx-qm-3wD" firstAttribute="height" secondItem="Dh5-6v-KLP" secondAttribute="height" multiplier="1.40909" id="5MX-nA-g1K"/>
+                                    <constraint firstItem="8hx-qm-3wD" firstAttribute="height" secondItem="Dh5-6v-KLP" secondAttribute="height" multiplier="1.55" id="5MX-nA-g1K"/>
                                     <constraint firstAttribute="bottom" secondItem="8hx-qm-3wD" secondAttribute="bottom" id="HDf-d0-HJF"/>
                                     <constraint firstItem="8hx-qm-3wD" firstAttribute="leading" secondItem="Dh5-6v-KLP" secondAttribute="leading" id="Ryg-3F-0U8"/>
                                     <constraint firstItem="8hx-qm-3wD" firstAttribute="width" secondItem="Dh5-6v-KLP" secondAttribute="width" id="lJm-iL-6GY"/>
@@ -175,17 +319,22 @@
                             <constraint firstItem="Dh5-6v-KLP" firstAttribute="centerX" secondItem="fq7-vP-Ttr" secondAttribute="centerX" id="h6j-73-xI0"/>
                             <constraint firstItem="Dh5-6v-KLP" firstAttribute="top" secondItem="hnV-SV-6OK" secondAttribute="top" id="iLI-HM-3JP"/>
                             <constraint firstItem="Dh5-6v-KLP" firstAttribute="leading" secondItem="hnV-SV-6OK" secondAttribute="leading" id="lby-k7-0D7"/>
+                            <constraint firstItem="O77-mQ-WGd" firstAttribute="centerX" secondItem="hnV-SV-6OK" secondAttribute="centerX" id="sZR-Tr-vyv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hnV-SV-6OK"/>
                     </view>
                     <navigationItem key="navigationItem" id="JW6-IZ-Zek">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="bfb-Fl-LS9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="bfb-Fl-LS9">
+                            <connections>
+                                <action selector="backButton:" destination="bgd-Vt-UXC" id="hSk-cp-f0y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtV-A9-3tb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4917.3913043478269" y="136.14130434782609"/>
+            <point key="canvasLocation" x="5824.6376811594209" y="136.14130434782609"/>
         </scene>
         <!--Reminders List Table View Controller-->
         <scene sceneID="PnZ-p8-aM7">
@@ -239,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7v-ss-xca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6284.057971014493" y="-620.38043478260875"/>
+            <point key="canvasLocation" x="7191.3043478260879" y="-620.38043478260875"/>
         </scene>
         <!--Branch Navigation Controller-->
         <scene sceneID="UWx-0O-uyb">
@@ -296,7 +445,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFl-x2-2Sj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5376.811594202899" y="-620.38043478260875"/>
+            <point key="canvasLocation" x="6284.057971014493" y="-620.38043478260875"/>
         </scene>
         <!--Soothing Sounds Navigation Controller-->
         <scene sceneID="a2Y-Vb-gFi">
@@ -335,8 +484,28 @@
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="115.7608695652174"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nQT-Hf-Mwn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vSN-r7-8yz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dmr-KJ-6Th"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ODi-bp-CBF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bgd-Vt-UXC" kind="relationship" relationship="rootViewController" id="Rx4-tG-6Tg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3y-lI-waR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4917.3913043478269" y="136.14130434782609"/>
+        </scene>
     </scenes>
     <resources>
         <image name="clearplane" width="980" height="942"/>
+        <image name="skyimage" width="640" height="360"/>
     </resources>
 </document>

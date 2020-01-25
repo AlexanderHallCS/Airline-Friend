@@ -16,21 +16,8 @@ class AirportHelpVC: UIViewController {
         super.viewDidLoad()
     }
     
-    /*@IBOutlet weak var stepsToHaveLabel: UILabel! {
-        didSet {
-            let attributedString = NSMutableAttributedString.init(string: stepsToHaveLabel.text!)
-            attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: 1, range: NSRange.init(location: 0, length: attributedString.length))
-            stepsToHaveLabel.attributedText = attributedString
-        }
-    }
-    @IBOutlet weak var easyTimeLabel: UILabel! {
-        didSet {
-            
-        }
-    } */
-    
-    @IBAction func unwindToBranchNavigator(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
     }
     
 }
