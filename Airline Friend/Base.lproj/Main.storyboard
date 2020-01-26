@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NPn-FR-fFn">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -174,33 +175,56 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calmingraindrop" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-oq-gyu">
                                 <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vibes, Strings of Time, Tranquility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg3-hr-sGI">
-                                <rect key="frame" x="69" y="83" width="257" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo9-5g-Pc9">
-                                <rect key="frame" x="135" y="613" width="145" height="36"/>
-                                <color key="backgroundColor" red="0.2627316965" green="0.81457228790000002" blue="0.89156814529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="20" right="8"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Fd-jfg">
+                                <rect key="frame" x="19" y="366" width="375" height="40"/>
+                                <state key="normal" image="button_play-strings-of-time-david-fesliyan">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="playStringsOfTimeButton:" destination="qZi-5c-tLB" eventType="touchUpInside" id="Xlj-SH-Cwt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-xJ-sIR">
+                                <rect key="frame" x="18.666666666666657" y="459" width="376" height="40"/>
+                                <state key="normal" image="button_play-tranquility-david-fesliyan">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTranquilityButton:" destination="qZi-5c-tLB" eventType="touchUpInside" id="5C7-MN-8Iv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05D-uP-z9Y">
+                                <rect key="frame" x="132" y="606" width="150" height="40"/>
+                                <state key="normal" image="button_stop-music"/>
+                                <connections>
+                                    <action selector="stopMusicButton:" destination="qZi-5c-tLB" eventType="touchUpInside" id="Wjf-62-zAx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-Bk-hKQ">
+                                <rect key="frame" x="54" y="245" width="305" height="40"/>
+                                <state key="normal" image="button_play-vibes-david-renda">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVibesButton:" destination="qZi-5c-tLB" eventType="touchUpInside" id="Diu-HQ-2AR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="zo9-5g-Pc9" firstAttribute="centerX" secondItem="QAh-oq-gyu" secondAttribute="centerX" id="37g-8w-j6A"/>
+                            <constraint firstItem="sLO-Bk-hKQ" firstAttribute="centerX" secondItem="cS2-Fd-jfg" secondAttribute="centerX" id="5rJ-46-4LO"/>
+                            <constraint firstItem="05D-uP-z9Y" firstAttribute="centerX" secondItem="QAh-oq-gyu" secondAttribute="centerX" id="DwU-YX-osw"/>
+                            <constraint firstItem="cS2-Fd-jfg" firstAttribute="top" secondItem="sLO-Bk-hKQ" secondAttribute="bottom" constant="81" id="Iek-D7-gFX"/>
+                            <constraint firstItem="bLx-Xf-CAZ" firstAttribute="trailing" secondItem="cS2-Fd-jfg" secondAttribute="trailing" constant="20" id="LP5-H0-Ng0"/>
                             <constraint firstItem="QAh-oq-gyu" firstAttribute="centerY" secondItem="bLx-Xf-CAZ" secondAttribute="centerY" id="M1w-BX-nCk"/>
                             <constraint firstItem="QAh-oq-gyu" firstAttribute="top" secondItem="bLx-Xf-CAZ" secondAttribute="top" id="NfF-Gb-Q4k"/>
-                            <constraint firstItem="bLx-Xf-CAZ" firstAttribute="bottom" secondItem="QAh-oq-gyu" secondAttribute="bottom" id="SDW-bm-z1V"/>
-                            <constraint firstItem="bLx-Xf-CAZ" firstAttribute="trailing" secondItem="QAh-oq-gyu" secondAttribute="trailing" id="ZoF-bu-0tv"/>
+                            <constraint firstItem="sLO-Bk-hKQ" firstAttribute="top" secondItem="bLx-Xf-CAZ" secondAttribute="top" constant="189" id="WBu-07-oqm"/>
                             <constraint firstItem="QAh-oq-gyu" firstAttribute="centerX" secondItem="bLx-Xf-CAZ" secondAttribute="centerX" id="aLS-bB-FrD"/>
                             <constraint firstItem="QAh-oq-gyu" firstAttribute="leading" secondItem="bLx-Xf-CAZ" secondAttribute="leading" id="bAR-9r-qBM"/>
-                            <constraint firstItem="zo9-5g-Pc9" firstAttribute="top" secondItem="QAh-oq-gyu" secondAttribute="bottom" constant="-103" id="bDn-Xx-hW2"/>
-                            <constraint firstItem="QAh-oq-gyu" firstAttribute="width" secondItem="zGa-sx-WKk" secondAttribute="width" id="bWc-n9-MJZ"/>
+                            <constraint firstItem="cS2-Fd-jfg" firstAttribute="leading" secondItem="bLx-Xf-CAZ" secondAttribute="leading" constant="19" id="bKj-9v-CIm"/>
+                            <constraint firstItem="nmk-xJ-sIR" firstAttribute="centerX" secondItem="cS2-Fd-jfg" secondAttribute="centerX" id="cB5-5k-2Vm"/>
+                            <constraint firstItem="nmk-xJ-sIR" firstAttribute="top" secondItem="cS2-Fd-jfg" secondAttribute="bottom" constant="53" id="sf1-W8-Xbb"/>
+                            <constraint firstItem="05D-uP-z9Y" firstAttribute="top" secondItem="QAh-oq-gyu" secondAttribute="bottom" constant="-110" id="wOb-hF-dao"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bLx-Xf-CAZ"/>
                     </view>
@@ -225,13 +249,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-6v-KLP">
-                                <rect key="frame" x="0.0" y="56" width="414" height="603"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="603.33333333333337"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-qm-3wD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="935"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skyimage" translatesAutoresizingMaskIntoConstraints="NO" id="O77-mQ-WGd">
-                                                <rect key="frame" x="-113" y="-3" width="640" height="941"/>
+                                                <rect key="frame" x="-433" y="-3" width="1280" height="941"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJZ-II-Tzb">
                                                 <rect key="frame" x="38.333333333333343" y="49" width="337.66666666666663" height="33.333333333333343"/>
@@ -596,6 +620,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_play-strings-of-time-david-fesliyan" width="416" height="40"/>
+        <image name="button_play-tranquility-david-fesliyan" width="376" height="40"/>
+        <image name="button_play-vibes-david-renda" width="305" height="40"/>
+        <image name="button_stop-music" width="150" height="40"/>
         <image name="calmingraindrop" width="183" height="275"/>
         <image name="clearplane" width="980" height="942"/>
         <image name="skyimage" width="640" height="360"/>
