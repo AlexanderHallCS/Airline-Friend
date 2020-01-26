@@ -65,6 +65,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
+                                <rect key="frame" x="74" y="572" width="266" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Soothing Music">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m8T-4d-C5w" kind="presentation" modalTransitionStyle="crossDissolve" id="jgu-sG-pGE"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-iz-ScG">
                                 <rect key="frame" x="104" y="356" width="206" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -85,24 +95,58 @@
                                     <segue destination="cSf-2s-kHp" kind="presentation" modalTransitionStyle="crossDissolve" id="X8E-mc-nXY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
-                                <rect key="frame" x="74" y="572" width="266" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Soothing Music">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="m8T-4d-C5w" kind="presentation" modalTransitionStyle="crossDissolve" id="jgu-sG-pGE"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqy-qc-dkG">
+                                <rect key="frame" x="80.666666666666686" y="112.66666666666667" width="253" height="22.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Save important reminders here!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h55-AR-sB8">
+                                <rect key="frame" x="93.000000000000014" y="337.66666666666669" width="228.33333333333337" height="22.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Airport navigation tips here!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-Q9-CUC">
+                                <rect key="frame" x="93" y="553" width="228" height="22.333333333333371"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Have a more relaxing flight!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2627316965" green="0.81457228790000002" blue="0.89156814529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="top" secondItem="t7B-UX-JnQ" secondAttribute="bottom" constant="164" id="5Ve-Qa-iXt"/>
                             <constraint firstItem="adX-Yj-vx4" firstAttribute="bottom" secondItem="HMF-ET-Fq6" secondAttribute="bottom" constant="84" id="AfZ-ll-LMq"/>
                             <constraint firstItem="HMF-ET-Fq6" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="Fyr-De-hHf"/>
+                            <constraint firstItem="Uqy-qc-dkG" firstAttribute="centerX" secondItem="t7B-UX-JnQ" secondAttribute="centerX" id="GWi-Xi-dVN"/>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="KTj-ZA-g6f"/>
+                            <constraint firstItem="qDN-Q9-CUC" firstAttribute="centerX" secondItem="HMF-ET-Fq6" secondAttribute="centerX" id="QtP-G2-uiX"/>
+                            <constraint firstItem="h55-AR-sB8" firstAttribute="centerX" secondItem="Id7-iz-ScG" secondAttribute="centerX" id="Ssh-wf-ST9"/>
+                            <constraint firstItem="t7B-UX-JnQ" firstAttribute="top" secondItem="Uqy-qc-dkG" secondAttribute="bottom" constant="-3" id="Ujp-2S-yFT"/>
+                            <constraint firstItem="HMF-ET-Fq6" firstAttribute="top" secondItem="qDN-Q9-CUC" secondAttribute="bottom" constant="-3.3333333333333712" id="cMd-v8-LyX"/>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="centerY" secondItem="adX-Yj-vx4" secondAttribute="centerY" id="f1n-0h-aYA"/>
+                            <constraint firstItem="Id7-iz-ScG" firstAttribute="top" secondItem="h55-AR-sB8" secondAttribute="bottom" constant="-4" id="rfd-vE-Nm4"/>
                             <constraint firstItem="t7B-UX-JnQ" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="xma-Bc-05c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="adX-Yj-vx4"/>

@@ -14,6 +14,10 @@ class SoothingMusicVC: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
+    override func viewDidLoad() {
+        
+    }
+    
     @IBAction func backButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true)
     }
