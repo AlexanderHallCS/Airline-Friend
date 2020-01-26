@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="115.7608695652174"/>
         </scene>
-        <!--Branch ControllerVC-->
+        <!--Navigator-->
         <scene sceneID="fvj-aE-7gY">
             <objects>
                 <viewController id="wcC-gD-f22" customClass="BranchControllerVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,16 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
-                                <rect key="frame" x="60.666666666666657" y="580" width="293" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Soothing Sounds">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="m8T-4d-C5w" kind="show" id="jgu-sG-pGE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-iz-ScG">
                                 <rect key="frame" x="104" y="356" width="206" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -86,51 +76,103 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-UX-JnQ">
-                                <rect key="frame" x="90" y="132" width="234" height="60"/>
+                                <rect key="frame" x="63.666666666666657" y="132" width="287" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Reminder List">
+                                <state key="normal" title="Flight Reminders">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cSf-2s-kHp" kind="show" id="X8E-mc-nXY"/>
+                                    <segue destination="cSf-2s-kHp" kind="presentation" modalTransitionStyle="crossDissolve" id="X8E-mc-nXY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
+                                <rect key="frame" x="74" y="572" width="266" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Soothing Music">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m8T-4d-C5w" kind="presentation" modalTransitionStyle="crossDissolve" id="jgu-sG-pGE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.2627316965" green="0.81457228790000002" blue="0.89156814529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="adX-Yj-vx4" firstAttribute="bottom" secondItem="HMF-ET-Fq6" secondAttribute="bottom" constant="102" id="0l8-UO-K5R"/>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="top" secondItem="t7B-UX-JnQ" secondAttribute="bottom" constant="164" id="5Ve-Qa-iXt"/>
-                            <constraint firstItem="HMF-ET-Fq6" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="AID-Ky-Uxi"/>
+                            <constraint firstItem="adX-Yj-vx4" firstAttribute="bottom" secondItem="HMF-ET-Fq6" secondAttribute="bottom" constant="84" id="AfZ-ll-LMq"/>
+                            <constraint firstItem="HMF-ET-Fq6" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="Fyr-De-hHf"/>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="KTj-ZA-g6f"/>
-                            <constraint firstItem="HMF-ET-Fq6" firstAttribute="top" secondItem="Id7-iz-ScG" secondAttribute="bottom" constant="164" id="LHa-HQ-haM"/>
                             <constraint firstItem="Id7-iz-ScG" firstAttribute="centerY" secondItem="adX-Yj-vx4" secondAttribute="centerY" id="f1n-0h-aYA"/>
                             <constraint firstItem="t7B-UX-JnQ" firstAttribute="centerX" secondItem="adX-Yj-vx4" secondAttribute="centerX" id="xma-Bc-05c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="adX-Yj-vx4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5rK-qQ-XJm"/>
+                    <navigationItem key="navigationItem" title="Navigator" id="5rK-qQ-XJm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="DBH-ES-666">
+                            <connections>
+                                <action selector="backButton:" destination="wcC-gD-f22" id="tvM-AR-tBw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEo-F7-RTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3623.188405797102" y="115.7608695652174"/>
         </scene>
-        <!--Soothing SoundsVC-->
+        <!--Soothing Music-->
         <scene sceneID="LQX-NI-RFL">
             <objects>
-                <viewController id="qZi-5c-tLB" customClass="SoothingSoundsVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qZi-5c-tLB" customClass="SoothingMusicVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zGa-sx-WKk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calmingraindrop" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-oq-gyu">
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vibes, Strings of Time, Tranquility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg3-hr-sGI">
+                                <rect key="frame" x="69" y="83" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo9-5g-Pc9">
+                                <rect key="frame" x="135" y="613" width="145" height="36"/>
+                                <color key="backgroundColor" red="0.2627316965" green="0.81457228790000002" blue="0.89156814529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="20" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zo9-5g-Pc9" firstAttribute="centerX" secondItem="QAh-oq-gyu" secondAttribute="centerX" id="37g-8w-j6A"/>
+                            <constraint firstItem="QAh-oq-gyu" firstAttribute="centerY" secondItem="bLx-Xf-CAZ" secondAttribute="centerY" id="M1w-BX-nCk"/>
+                            <constraint firstItem="QAh-oq-gyu" firstAttribute="top" secondItem="bLx-Xf-CAZ" secondAttribute="top" id="NfF-Gb-Q4k"/>
+                            <constraint firstItem="bLx-Xf-CAZ" firstAttribute="bottom" secondItem="QAh-oq-gyu" secondAttribute="bottom" id="SDW-bm-z1V"/>
+                            <constraint firstItem="bLx-Xf-CAZ" firstAttribute="trailing" secondItem="QAh-oq-gyu" secondAttribute="trailing" id="ZoF-bu-0tv"/>
+                            <constraint firstItem="QAh-oq-gyu" firstAttribute="centerX" secondItem="bLx-Xf-CAZ" secondAttribute="centerX" id="aLS-bB-FrD"/>
+                            <constraint firstItem="QAh-oq-gyu" firstAttribute="leading" secondItem="bLx-Xf-CAZ" secondAttribute="leading" id="bAR-9r-qBM"/>
+                            <constraint firstItem="zo9-5g-Pc9" firstAttribute="top" secondItem="QAh-oq-gyu" secondAttribute="bottom" constant="-103" id="bDn-Xx-hW2"/>
+                            <constraint firstItem="QAh-oq-gyu" firstAttribute="width" secondItem="zGa-sx-WKk" secondAttribute="width" id="bWc-n9-MJZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bLx-Xf-CAZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Odn-p7-BcV"/>
+                    <navigationItem key="navigationItem" title="Soothing Music" id="Odn-p7-BcV">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Rhc-WI-4a2">
+                            <connections>
+                                <action selector="backButton:" destination="qZi-5c-tLB" id="nsx-d5-3m3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtw-Ng-2bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4388.4057971014499" y="843.75000000000011"/>
         </scene>
-        <!--Airport HelpVC-->
+        <!--Airport Help-->
         <scene sceneID="vYc-bO-Jdb">
             <objects>
                 <viewController id="bgd-Vt-UXC" customClass="AirportHelpVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
@@ -291,14 +333,14 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="O77-mQ-WGd" firstAttribute="height" secondItem="8hx-qm-3wD" secondAttribute="height" multiplier="1.00645" id="1ch-Ge-K6h"/>
+                                            <constraint firstItem="VBm-rk-sN7" firstAttribute="leading" secondItem="8hx-qm-3wD" secondAttribute="leading" constant="31" id="2Iw-Vb-JIf"/>
                                             <constraint firstItem="K29-m1-6Vj" firstAttribute="centerX" secondItem="zJZ-II-Tzb" secondAttribute="centerX" id="Ady-6c-ldO"/>
                                             <constraint firstItem="zJZ-II-Tzb" firstAttribute="centerX" secondItem="8hx-qm-3wD" secondAttribute="centerX" id="BAS-zb-G0d"/>
                                             <constraint firstItem="O77-mQ-WGd" firstAttribute="top" secondItem="8hx-qm-3wD" secondAttribute="top" constant="-3" id="OwW-Di-4xO"/>
                                             <constraint firstItem="zJZ-II-Tzb" firstAttribute="top" secondItem="8hx-qm-3wD" secondAttribute="top" constant="49" id="eSs-YR-Oep"/>
                                             <constraint firstItem="K29-m1-6Vj" firstAttribute="top" secondItem="zJZ-II-Tzb" secondAttribute="bottom" constant="8" id="egd-Md-5KT"/>
-                                            <constraint firstItem="O77-mQ-WGd" firstAttribute="leading" secondItem="VBm-rk-sN7" secondAttribute="trailing" constant="-370" id="m40-d5-0LC"/>
-                                            <constraint firstItem="VBm-rk-sN7" firstAttribute="top" secondItem="K29-m1-6Vj" secondAttribute="bottom" constant="33.333333333333314" id="nbp-4y-ALH"/>
                                             <constraint firstAttribute="height" constant="935" id="ogn-FO-0r9"/>
+                                            <constraint firstItem="VBm-rk-sN7" firstAttribute="top" secondItem="K29-m1-6Vj" secondAttribute="bottom" constant="33.333333333333314" id="xDg-Lf-XZe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -323,7 +365,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hnV-SV-6OK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JW6-IZ-Zek">
+                    <navigationItem key="navigationItem" title="Airport Help" id="JW6-IZ-Zek">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="bfb-Fl-LS9">
                             <connections>
                                 <action selector="backButton:" destination="bgd-Vt-UXC" id="hSk-cp-f0y"/>
@@ -336,7 +378,7 @@
             </objects>
             <point key="canvasLocation" x="5824.6376811594209" y="136.14130434782609"/>
         </scene>
-        <!--Reminders List Table View Controller-->
+        <!--Flight Reminders-->
         <scene sceneID="PnZ-p8-aM7">
             <objects>
                 <tableViewController id="F7f-B6-Itx" customClass="RemindersListTableViewController" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
@@ -359,10 +401,15 @@
                             <outlet property="delegate" destination="F7f-B6-Itx" id="6Ou-30-r4T"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="SV3-pu-y3u">
+                    <navigationItem key="navigationItem" title="Flight Reminders" id="SV3-pu-y3u">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="BcH-1R-VJc">
+                            <connections>
+                                <action selector="backButton:" destination="F7f-B6-Itx" id="ynq-8o-jph"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uj4-Kh-QQ0">
                             <connections>
-                                <segue destination="e30-Iw-0Qy" kind="show" id="KyC-Qb-Zjh"/>
+                                <segue destination="e30-Iw-0Qy" kind="presentation" id="KyC-Qb-Zjh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -371,7 +418,7 @@
             </objects>
             <point key="canvasLocation" x="4478.2608695652179" y="-620.38043478260875"/>
         </scene>
-        <!--Add Airport ReminderVC-->
+        <!--Add a Reminder-->
         <scene sceneID="gaz-cn-h7r">
             <objects>
                 <viewController id="gtJ-hs-RDR" customClass="AddAirportReminderVC" customModule="Airline_Friend" customModuleProvider="target" sceneMemberID="viewController">
@@ -381,7 +428,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="B63-HK-Uae"/>
                     </view>
-                    <navigationItem key="navigationItem" id="U1m-IG-krh">
+                    <navigationItem key="navigationItem" title="Add a Reminder" id="U1m-IG-krh">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ase-yK-juz"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="a0V-Ab-GSi"/>
                     </navigationItem>
@@ -505,6 +552,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calmingraindrop" width="183" height="275"/>
         <image name="clearplane" width="980" height="942"/>
         <image name="skyimage" width="640" height="360"/>
     </resources>

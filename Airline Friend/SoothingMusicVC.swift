@@ -1,5 +1,5 @@
 //
-//  BranchControllerVC.swift
+//  SoothingSoundsVC.swift
 //  Airline Friend
 //
 //  Created by Alexander Hall on 1/25/20.
@@ -8,10 +8,15 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
-class BranchControllerVC: UIViewController {
+class SoothingMusicVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
     
     @IBAction func backButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true)
     }
+    
+    
 }

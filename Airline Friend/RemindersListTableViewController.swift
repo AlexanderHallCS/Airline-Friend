@@ -20,6 +20,9 @@ class RemindersListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
