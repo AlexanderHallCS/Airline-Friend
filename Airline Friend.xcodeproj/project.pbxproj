@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1100F1C023DD35F200FED638 /* AirportReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100F1BF23DD35F200FED638 /* AirportReminder.swift */; };
 		1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A55F23DCBA3D0078001B /* AppDelegate.swift */; };
 		1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56123DCBA3D0078001B /* SceneDelegate.swift */; };
 		1141A56423DCBA3D0078001B /* AirlineFriendHomescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A56323DCBA3D0078001B /* AirlineFriendHomescreen.swift */; };
@@ -16,7 +17,7 @@
 		1141A56F23DCBA400078001B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141A56D23DCBA400078001B /* LaunchScreen.storyboard */; };
 		1141A57A23DCBA400078001B /* Airline_FriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A57923DCBA400078001B /* Airline_FriendTests.swift */; };
 		1141A58523DCBA400078001B /* Airline_FriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A58423DCBA400078001B /* Airline_FriendUITests.swift */; };
-		1141A59823DCC6C90078001B /* RemindersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A59723DCC6C90078001B /* RemindersListTableViewController.swift */; };
+		1141A59823DCC6C90078001B /* AirportRemindersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A59723DCC6C90078001B /* AirportRemindersListTableViewController.swift */; };
 		1141A59A23DCC7D60078001B /* AddAirportReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A59923DCC7D60078001B /* AddAirportReminderVC.swift */; };
 		1141A59C23DCC8BF0078001B /* SoothingMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A59B23DCC8BF0078001B /* SoothingMusicVC.swift */; };
 		1141A59E23DCC9070078001B /* AirportHelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141A59D23DCC9070078001B /* AirportHelpVC.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1100F1BF23DD35F200FED638 /* AirportReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportReminder.swift; sourceTree = "<group>"; };
 		1141A55C23DCBA3D0078001B /* Airline Friend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airline Friend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141A55F23DCBA3D0078001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1141A56123DCBA3D0078001B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +61,7 @@
 		1141A58023DCBA400078001B /* Airline FriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airline FriendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141A58423DCBA400078001B /* Airline_FriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline_FriendUITests.swift; sourceTree = "<group>"; };
 		1141A58623DCBA400078001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1141A59723DCC6C90078001B /* RemindersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListTableViewController.swift; sourceTree = "<group>"; };
+		1141A59723DCC6C90078001B /* AirportRemindersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRemindersListTableViewController.swift; sourceTree = "<group>"; };
 		1141A59923DCC7D60078001B /* AddAirportReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirportReminderVC.swift; sourceTree = "<group>"; };
 		1141A59B23DCC8BF0078001B /* SoothingMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoothingMusicVC.swift; sourceTree = "<group>"; };
 		1141A59D23DCC9070078001B /* AirportHelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHelpVC.swift; sourceTree = "<group>"; };
@@ -125,7 +127,8 @@
 				1141A59D23DCC9070078001B /* AirportHelpVC.swift */,
 				1141A59B23DCC8BF0078001B /* SoothingMusicVC.swift */,
 				1141A59923DCC7D60078001B /* AddAirportReminderVC.swift */,
-				1141A59723DCC6C90078001B /* RemindersListTableViewController.swift */,
+				1100F1BF23DD35F200FED638 /* AirportReminder.swift */,
+				1141A59723DCC6C90078001B /* AirportRemindersListTableViewController.swift */,
 				1141A56B23DCBA400078001B /* Assets.xcassets */,
 				1141A57023DCBA400078001B /* Info.plist */,
 				1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */,
@@ -308,12 +311,13 @@
 				1141A56423DCBA3D0078001B /* AirlineFriendHomescreen.swift in Sources */,
 				1141A59C23DCC8BF0078001B /* SoothingMusicVC.swift in Sources */,
 				1141A56023DCBA3D0078001B /* AppDelegate.swift in Sources */,
-				1141A59823DCC6C90078001B /* RemindersListTableViewController.swift in Sources */,
+				1141A59823DCC6C90078001B /* AirportRemindersListTableViewController.swift in Sources */,
 				1141A56A23DCBA3D0078001B /* Airline_Friend.xcdatamodeld in Sources */,
 				1141A5A023DCECEB0078001B /* BranchControllerVC.swift in Sources */,
 				1141A56223DCBA3D0078001B /* SceneDelegate.swift in Sources */,
 				1141A59E23DCC9070078001B /* AirportHelpVC.swift in Sources */,
 				1141A59A23DCC7D60078001B /* AddAirportReminderVC.swift in Sources */,
+				1100F1C023DD35F200FED638 /* AirportReminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
