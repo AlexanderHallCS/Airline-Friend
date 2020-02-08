@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,8 @@
 		1141A5A523DD0F5D0078001B /* 2019-08-09_-_Vibes_-_www.FesliyanStudios.com_-_David_Renda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1141A5A223DD0F5D0078001B /* 2019-08-09_-_Vibes_-_www.FesliyanStudios.com_-_David_Renda.mp3 */; };
 		1141A5A623DD0F5D0078001B /* 2019-04-26_-_Tranquility_-_www.fesliyanstudios.com.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1141A5A323DD0F5D0078001B /* 2019-04-26_-_Tranquility_-_www.fesliyanstudios.com.mp3 */; };
 		1141A5A723DD0F5D0078001B /* 2016-05-06_-_Strings_of_Time_-_David_Fesliyan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1141A5A423DD0F5D0078001B /* 2016-05-06_-_Strings_of_Time_-_David_Fesliyan.mp3 */; };
+		61D432A18AC5AEEFA0A7CD35 /* Pods_Airline_Friend_Airline_FriendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD60DC76554399F3941AFA9 /* Pods_Airline_Friend_Airline_FriendUITests.framework */; };
+		B51056D5268FDC2B6EFE91E5 /* Pods_Airline_FriendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41312251C807D2D7B2C0215 /* Pods_Airline_FriendTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,16 @@
 		1141A5A223DD0F5D0078001B /* 2019-08-09_-_Vibes_-_www.FesliyanStudios.com_-_David_Renda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "2019-08-09_-_Vibes_-_www.FesliyanStudios.com_-_David_Renda.mp3"; path = "../../../../Downloads/2019-08-09_-_Vibes_-_www.FesliyanStudios.com_-_David_Renda.mp3"; sourceTree = "<group>"; };
 		1141A5A323DD0F5D0078001B /* 2019-04-26_-_Tranquility_-_www.fesliyanstudios.com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "2019-04-26_-_Tranquility_-_www.fesliyanstudios.com.mp3"; path = "../../../../Downloads/2019-04-26_-_Tranquility_-_www.fesliyanstudios.com.mp3"; sourceTree = "<group>"; };
 		1141A5A423DD0F5D0078001B /* 2016-05-06_-_Strings_of_Time_-_David_Fesliyan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "2016-05-06_-_Strings_of_Time_-_David_Fesliyan.mp3"; path = "../../../../Downloads/2016-05-06_-_Strings_of_Time_-_David_Fesliyan.mp3"; sourceTree = "<group>"; };
+		1186E4D323EE7419008D94AA /* MicrosoftCognitiveServicesSpeech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicrosoftCognitiveServicesSpeech-Bridging-Header.h"; sourceTree = "<group>"; };
+		3570BD2225D16466BFB1A334 /* Pods_Airline_Friend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airline_Friend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4900B48BC7F1F1A8C7000BCC /* Pods-Airline FriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline FriendTests.release.xcconfig"; path = "Target Support Files/Pods-Airline FriendTests/Pods-Airline FriendTests.release.xcconfig"; sourceTree = "<group>"; };
+		667FEC12E90B585E9D4CDCC6 /* Pods-Airline Friend-Airline FriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline Friend-Airline FriendUITests.debug.xcconfig"; path = "Target Support Files/Pods-Airline Friend-Airline FriendUITests/Pods-Airline Friend-Airline FriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C97FFAF1F9AEDC27C5D1841 /* Pods-Airline Friend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline Friend.release.xcconfig"; path = "Target Support Files/Pods-Airline Friend/Pods-Airline Friend.release.xcconfig"; sourceTree = "<group>"; };
+		A61BC92A0D3AD7797CA3E4E6 /* Pods-Airline Friend-Airline FriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline Friend-Airline FriendUITests.release.xcconfig"; path = "Target Support Files/Pods-Airline Friend-Airline FriendUITests/Pods-Airline Friend-Airline FriendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABD60DC76554399F3941AFA9 /* Pods_Airline_Friend_Airline_FriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airline_Friend_Airline_FriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0512968A88088803685985 /* Pods-Airline FriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline FriendTests.debug.xcconfig"; path = "Target Support Files/Pods-Airline FriendTests/Pods-Airline FriendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2FD1D59A98D30C760894525 /* Pods-Airline Friend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airline Friend.debug.xcconfig"; path = "Target Support Files/Pods-Airline Friend/Pods-Airline Friend.debug.xcconfig"; sourceTree = "<group>"; };
+		E41312251C807D2D7B2C0215 /* Pods_Airline_FriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airline_FriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51056D5268FDC2B6EFE91E5 /* Pods_Airline_FriendTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D432A18AC5AEEFA0A7CD35 /* Pods_Airline_Friend_Airline_FriendUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +117,8 @@
 				1141A57823DCBA400078001B /* Airline FriendTests */,
 				1141A58323DCBA400078001B /* Airline FriendUITests */,
 				1141A55D23DCBA3D0078001B /* Products */,
+				6BB3B8E3346C4EBA97F15290 /* Pods */,
+				FF3000319BBDFA4F7F883AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +145,7 @@
 				1141A59923DCC7D60078001B /* AddAirportReminderVC.swift */,
 				1100F1BF23DD35F200FED638 /* AirportReminder.swift */,
 				1141A59723DCC6C90078001B /* AirportRemindersListTableViewController.swift */,
+				1186E4D323EE7419008D94AA /* MicrosoftCognitiveServicesSpeech-Bridging-Header.h */,
 				1141A56B23DCBA400078001B /* Assets.xcassets */,
 				1141A57023DCBA400078001B /* Info.plist */,
 				1141A56823DCBA3D0078001B /* Airline_Friend.xcdatamodeld */,
@@ -174,6 +191,29 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		6BB3B8E3346C4EBA97F15290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD1D59A98D30C760894525 /* Pods-Airline Friend.debug.xcconfig */,
+				8C97FFAF1F9AEDC27C5D1841 /* Pods-Airline Friend.release.xcconfig */,
+				667FEC12E90B585E9D4CDCC6 /* Pods-Airline Friend-Airline FriendUITests.debug.xcconfig */,
+				A61BC92A0D3AD7797CA3E4E6 /* Pods-Airline Friend-Airline FriendUITests.release.xcconfig */,
+				AE0512968A88088803685985 /* Pods-Airline FriendTests.debug.xcconfig */,
+				4900B48BC7F1F1A8C7000BCC /* Pods-Airline FriendTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF3000319BBDFA4F7F883AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3570BD2225D16466BFB1A334 /* Pods_Airline_Friend.framework */,
+				ABD60DC76554399F3941AFA9 /* Pods_Airline_Friend_Airline_FriendUITests.framework */,
+				E41312251C807D2D7B2C0215 /* Pods_Airline_FriendTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1141A58923DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline Friend" */;
 			buildPhases = (
+				CE2690BB11BFF0678C805F1F /* [CP] Check Pods Manifest.lock */,
 				1141A55823DCBA3D0078001B /* Sources */,
 				1141A55923DCBA3D0078001B /* Frameworks */,
 				1141A55A23DCBA3D0078001B /* Resources */,
+				A86E38F687435C441DE702BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1141A58C23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendTests" */;
 			buildPhases = (
+				7F37F4164785E8277709D76E /* [CP] Check Pods Manifest.lock */,
 				1141A57123DCBA400078001B /* Sources */,
 				1141A57223DCBA400078001B /* Frameworks */,
 				1141A57323DCBA400078001B /* Resources */,
@@ -216,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1141A58F23DCBA400078001B /* Build configuration list for PBXNativeTarget "Airline FriendUITests" */;
 			buildPhases = (
+				ED7CA054E673E01D5582D9BD /* [CP] Check Pods Manifest.lock */,
 				1141A57C23DCBA400078001B /* Sources */,
 				1141A57D23DCBA400078001B /* Frameworks */,
 				1141A57E23DCBA400078001B /* Resources */,
+				0FA49976E36D7B7D956DB02E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +347,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA49976E36D7B7D956DB02E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airline Friend-Airline FriendUITests/Pods-Airline Friend-Airline FriendUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airline Friend-Airline FriendUITests/Pods-Airline Friend-Airline FriendUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Airline Friend-Airline FriendUITests/Pods-Airline Friend-Airline FriendUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F37F4164785E8277709D76E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Airline FriendTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86E38F687435C441DE702BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airline Friend/Pods-Airline Friend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Airline Friend/Pods-Airline Friend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Airline Friend/Pods-Airline Friend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2690BB11BFF0678C805F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Airline Friend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7CA054E673E01D5582D9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Airline Friend-Airline FriendUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1141A55823DCBA3D0078001B /* Sources */ = {
@@ -422,12 +570,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Airline Friend/MicrosoftCognitiveServicesSpeech-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -476,11 +625,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Airline Friend/MicrosoftCognitiveServicesSpeech-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -488,6 +638,7 @@
 		};
 		1141A58A23DCBA400078001B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FD1D59A98D30C760894525 /* Pods-Airline Friend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +658,7 @@
 		};
 		1141A58B23DCBA400078001B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C97FFAF1F9AEDC27C5D1841 /* Pods-Airline Friend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +678,7 @@
 		};
 		1141A58D23DCBA400078001B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0512968A88088803685985 /* Pods-Airline FriendTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +701,7 @@
 		};
 		1141A58E23DCBA400078001B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4900B48BC7F1F1A8C7000BCC /* Pods-Airline FriendTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +724,7 @@
 		};
 		1141A59023DCBA400078001B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667FEC12E90B585E9D4CDCC6 /* Pods-Airline Friend-Airline FriendUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +745,7 @@
 		};
 		1141A59123DCBA400078001B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61BC92A0D3AD7797CA3E4E6 /* Pods-Airline Friend-Airline FriendUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

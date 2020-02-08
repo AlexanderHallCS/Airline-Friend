@@ -16,21 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-Fl-XJf">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-Fl-XJf">
                                 <rect key="frame" x="42.666666666666657" y="178" width="329" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Airline Friend">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearplane" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-VK-zh6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="clearplane" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-VK-zh6">
                                 <rect key="frame" x="87" y="252" width="240" height="276"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-qL-k60">
-                                <rect key="frame" x="122.66666666666669" y="534" width="169" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-qL-k60">
+                                <rect key="frame" x="71" y="528" width="272" height="121"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Begin">
+                                <state key="normal" image="button_begin">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -66,30 +65,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
-                                <rect key="frame" x="74" y="572" width="266" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Soothing Music">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMF-ET-Fq6">
+                                <rect key="frame" x="110.66666666666669" y="592" width="193" height="40"/>
+                                <state key="normal" image="button_soothing-music">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="m8T-4d-C5w" kind="presentation" modalTransitionStyle="crossDissolve" id="jgu-sG-pGE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-iz-ScG">
-                                <rect key="frame" x="104" y="356" width="206" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Airport Help">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-iz-ScG">
+                                <rect key="frame" x="125.66666666666669" y="366" width="163" height="40"/>
+                                <state key="normal" image="button_airport-help">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="vSN-r7-8yz" kind="presentation" modalTransitionStyle="crossDissolve" id="goD-Lj-Uos"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-UX-JnQ">
-                                <rect key="frame" x="53" y="132" width="308" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Airport Reminders">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-UX-JnQ">
+                                <rect key="frame" x="94" y="162" width="226" height="40"/>
+                                <state key="normal" image="button_airport-reminders">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -97,7 +93,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqy-qc-dkG">
-                                <rect key="frame" x="80.666666666666686" y="112.66666666666667" width="253" height="22.333333333333329"/>
+                                <rect key="frame" x="80.666666666666686" y="142.66666666666666" width="253" height="22.333333333333343"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Save important reminders here!">
                                         <attributes>
@@ -109,7 +105,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h55-AR-sB8">
-                                <rect key="frame" x="93.000000000000014" y="337.66666666666669" width="228.33333333333337" height="22.333333333333314"/>
+                                <rect key="frame" x="93.000000000000014" y="347.66666666666669" width="228.33333333333337" height="22.333333333333314"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Airport navigation tips here!">
                                         <attributes>
@@ -122,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-Q9-CUC">
-                                <rect key="frame" x="93" y="553" width="228" height="22.333333333333371"/>
+                                <rect key="frame" x="93" y="573" width="228" height="22.333333333333371"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Have a more relaxing flight!">
                                         <attributes>
@@ -176,7 +172,7 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Fd-jfg">
-                                <rect key="frame" x="19" y="366" width="375" height="40"/>
+                                <rect key="frame" x="19" y="406" width="375" height="80"/>
                                 <state key="normal" image="button_play-strings-of-time-david-fesliyan">
                                     <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </state>
@@ -185,7 +181,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-xJ-sIR">
-                                <rect key="frame" x="18.666666666666657" y="459" width="376" height="40"/>
+                                <rect key="frame" x="-169.66666666666666" y="539" width="752.33333333333337" height="80"/>
                                 <state key="normal" image="button_play-tranquility-david-fesliyan">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -194,14 +190,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05D-uP-z9Y">
-                                <rect key="frame" x="132" y="606" width="150" height="40"/>
+                                <rect key="frame" x="57" y="606" width="300" height="80"/>
                                 <state key="normal" image="button_stop-music"/>
                                 <connections>
                                     <action selector="stopMusicButton:" destination="qZi-5c-tLB" eventType="touchUpInside" id="Wjf-62-zAx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-Bk-hKQ">
-                                <rect key="frame" x="54" y="245" width="305" height="40"/>
+                                <rect key="frame" x="-98.666666666666686" y="245" width="610.33333333333337" height="80"/>
                                 <state key="normal" image="button_play-vibes-david-renda">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -255,7 +251,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="935"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skyimage" translatesAutoresizingMaskIntoConstraints="NO" id="O77-mQ-WGd">
-                                                <rect key="frame" x="-433" y="-3" width="1280" height="941"/>
+                                                <rect key="frame" x="-113" y="-3" width="640" height="941"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJZ-II-Tzb">
                                                 <rect key="frame" x="38.333333333333343" y="49" width="337.66666666666663" height="33.333333333333343"/>
@@ -455,15 +451,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="80s-Qu-mPF" style="IBUITableViewCellStyleDefault" id="d5f-Zf-veo">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="80s-Qu-mPF" style="IBUITableViewCellStyleDefault" id="d5f-Zf-veo">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d5f-Zf-veo" id="Zny-8B-5Kw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="80s-Qu-mPF">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
+                                            <rect key="frame" x="20" y="0.0" width="342" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -659,9 +655,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_airport-help" width="163" height="40"/>
+        <image name="button_airport-reminders" width="226" height="40"/>
+        <image name="button_begin" width="272" height="121"/>
         <image name="button_play-strings-of-time-david-fesliyan" width="416" height="40"/>
         <image name="button_play-tranquility-david-fesliyan" width="376" height="40"/>
         <image name="button_play-vibes-david-renda" width="305" height="40"/>
+        <image name="button_soothing-music" width="193" height="40"/>
         <image name="button_stop-music" width="150" height="40"/>
         <image name="calmingraindrop" width="183" height="275"/>
         <image name="clearplane" width="980" height="942"/>

@@ -12,20 +12,22 @@ import UIKit
 class AddAirportReminderVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet var reminderTextField: UITextField!
     
     var airportReminder: AirportReminder?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        reminderTextField.delegate = self
+        
         saveButton.isEnabled = false
     }
     
-    
-    @IBOutlet weak var reminderTextField: UITextField! {
-        didSet {
-            reminderTextField.delegate = self
-        }
+    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         reminderTextField.resignFirstResponder()
         return true
@@ -42,6 +44,6 @@ class AddAirportReminderVC: UIViewController, UITextFieldDelegate {
                 remindersVC.tableView.reloadData()
             }
         }
-    } 
+    }
     
 }

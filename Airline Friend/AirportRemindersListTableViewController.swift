@@ -13,8 +13,20 @@ class AirportRemindersListTableViewController: UITableViewController {
     // MARK: - Table view model
     var airportReminders = [AirportReminder]()
     
+    var speechConfig: SPXSpeechConfiguration?
+    var rowText: String!
+    
+    var sub: String!
+    var region: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sub = "de42173a8d324133a1a2a21c44016d95"
+        region = "westus"
+        
+        rowText = ""
+        
         if let allAirportReminders = loadReminders() {
             airportReminders += allAirportReminders
         }
@@ -41,6 +53,35 @@ class AirportRemindersListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return airportReminders.count
+    }
+    
+    override func tableView(_ tableView: UITableView,
+                   accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "reminderCell", for: indexPath)
+        rowText = airportReminders[indexPath.row].text
+        synthesisToSpeaker()
+    }
+    
+    func synthesisToSpeaker() {
+        var speechConfig: SPXSpeechConfiguration?
+        do {
+            try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
+        } catch let error {
+            print("error \(error) happened")
+            speechConfig = nil
+        }
+        let synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+        if rowText.isEmpty {
+            return
+        }
+        
+        let result = try! synthesizer.speakText(rowText)
+        
+        if result.reason == SPXResultReason.canceled
+        {
+            let cancellationDetails = try! SPXSpeechSynthesisCancellationDetails(fromCanceledSynthesisResult: result)
+            print("cancelled, detail: \(cancellationDetails.errorDetails!) ")
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
