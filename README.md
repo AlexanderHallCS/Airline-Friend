@@ -1,4 +1,4 @@
-# Airline-Friend
+# Airline Friend
 
 <img src="Airline%20Friend/Assets.xcassets/AppIcon.appiconset/Webp.net-resizeimage.png" width = "150">
 
